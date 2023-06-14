@@ -1,5 +1,6 @@
 import React from "react";
 import Content from "../../components/shared-components/Content";
+import bgImage from "/images/contact.jpg";
 
 function Contact(props) {
   return (
@@ -8,19 +9,23 @@ function Contact(props) {
         <div className="contact">
           <div
             className="background"
-            style={{ backgroundImage: "url('images/contact.jpg')" }}
+            style={{ backgroundImage: `url(${bgImage})` }}
           ></div>
 
           <h1
             className="title mt-1"
-            style={{ opacity: 1, marginBottom:'33px', transform: "matrix(1, 0, 0, 1, 0, 0)" }}
+            style={{
+              opacity: 1,
+              marginBottom: "33px",
+              transform: "matrix(1, 0, 0, 1, 0, 0)",
+            }}
           >
             Contact
           </h1>
 
           <div className="">
             <div className="elementor-section-wrap">
-              <section style={{padding: '10px'}}>
+              <section style={{ padding: "10px" }}>
                 <div className="row">
                   <div className="col-md">
                     <h2 className="fw-bold" style={{ fontSize: "1.5em" }}>
@@ -30,7 +35,7 @@ function Contact(props) {
                 </div>
               </section>
 
-              <section style={{padding: '0 10px'}}>
+              <section style={{ padding: "0 10px" }}>
                 <div className="elementor-container elementor-column-gap-default">
                   <div className="elementor-row">
                     <div
@@ -53,10 +58,8 @@ function Contact(props) {
                                 method="post"
                                 name="New Form"
                               >
-                                
                                 <div className="row gx-3 gy-2">
                                   <div className="col-md-6">
-                                    
                                     <input
                                       aria-required="true"
                                       className=""
@@ -69,7 +72,6 @@ function Contact(props) {
                                   </div>
 
                                   <div className="col-md-6">
-                                    
                                     <input
                                       aria-required="true"
                                       className="elementor-field elementor-size-sm elementor-field-textual"
@@ -82,7 +84,6 @@ function Contact(props) {
                                   </div>
 
                                   <div className="col-md-12">
-                                   
                                     <input
                                       className="elementor-field elementor-size-sm elementor-field-textual"
                                       name="subject"
@@ -93,7 +94,6 @@ function Contact(props) {
                                   </div>
 
                                   <div className="col-md-12">
-                                   
                                     <textarea
                                       className="elementor-field-textual elementor-field elementor-size-sm"
                                       name="message"
@@ -104,7 +104,7 @@ function Contact(props) {
 
                                   <div className="col-md d-flex justify-content-end">
                                     <button
-                                    className="contact-button contact-button-size-md"
+                                      className="contact-button contact-button-size-md"
                                       type="submit"
                                     >
                                       <span>
@@ -118,8 +118,6 @@ function Contact(props) {
                               </form>
                             </div>
                           </div>
-
-                          
                         </div>
                       </div>
                     </div>

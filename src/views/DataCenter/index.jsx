@@ -1,5 +1,7 @@
 import React from "react";
 import Content from "../../components/shared-components/Content";
+import bgImage from '/images/bg3.jpg'
+import SecurityImage from '/images/Security.jpg'
 
 function DataCenter(props) {
 
@@ -9,7 +11,7 @@ function DataCenter(props) {
 
       <div
         className="background"
-        style={{backgroundImage: "url('images/bg3.jpg')"}}
+        style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
       <div className="wrapper">
@@ -125,7 +127,7 @@ function DataCenter(props) {
             </div>
             <div className="gallery">
               <div className="gallery-item active">
-                <img className="img-fluid" src="images/Security.jpg" />
+                <img className="img-fluid" src={SecurityImage} />
               </div>
             </div>
           </div>

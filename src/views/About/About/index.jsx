@@ -1,11 +1,12 @@
 import React from "react";
+import bgImage from '/images/bge1.jpg'
 
 function AboutSection(props) {
   return (
     <>
       <div
         className="background"
-        style={{ backgroundImage: "url('/images/bge1.jpg')" }}
+        style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
       <div className="wrapper">

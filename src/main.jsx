@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import rootReducer from "./redux/reducers/index.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/telval/">
     <Provider store={rootReducer}>
       <App />
     </Provider>

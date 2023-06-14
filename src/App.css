@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 .title {
   margin-top: 0;
   font-family: MarkBold;
@@ -49,7 +51,7 @@ kbd {
   left: 0;
   opacity: 0;
   background-repeat: no-repeat;
-  background-image: url(/images/wave%402x.png);
+  background-image: url('/images/wave@2x.png');
   -webkit-transform: rotate(15deg) scale(2);
   transform: rotate(15deg) scale(2);
   animation: rotateWaveInvert 1.15s 0.15s ease forwards;
@@ -2070,6 +2072,7 @@ kbd {
 
 .home .carousel .item .item-title {
   font-size: 100px;
+  margin-top: revert;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;

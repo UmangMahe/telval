@@ -1,5 +1,6 @@
 import React from "react";
 import Content from "../../components/shared-components/Content";
+import bgImage from '/images/bge1.jpg'
 
 function Services(props) {
   return (
@@ -8,7 +9,7 @@ function Services(props) {
 
       <div
         className="background"
-        style={{backgroundImage: "url('images/bge1.jpg')"}}
+        style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
       <div className="wrapper">

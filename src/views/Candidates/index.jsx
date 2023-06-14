@@ -1,5 +1,7 @@
 import React from "react";
+import bgImage from '/images/bg2.jpg'
 import Content from "../../components/shared-components/Content";
+import CandidateImage from '/images/candidate.jpg'
 
 function Candidates(props) {
   return (
@@ -8,7 +10,7 @@ function Candidates(props) {
 
       <div
         className="background"
-        style={{backgroundImage: "url('images/bg2.jpg')"}}
+        style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
       <div className="wrapper">
@@ -41,7 +43,7 @@ function Candidates(props) {
 
             <div className="gallery">
               <div className="gallery-item active">
-                <img className="img-fluid" src="images/candidate.jpg" />
+                <img className="img-fluid" src={CandidateImage} />
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 import { useSelector } from "react-redux";
+import Logo from '/images/logo.png'
 
 const Header = () => {
   
@@ -41,7 +42,7 @@ const Header = () => {
     <div className="navigation" id="navigation" style={style}>
       <div className="navigation-content">
         <NavLink to="/" end className="logo router-link-exact-active active">
-          <img src="/images/logo.png" />
+          <img src={Logo} />
         </NavLink>
         <div onClick={openMenu} className="hamburger-menu">
           <div className="line"></div>
@@ -49,31 +50,31 @@ const Header = () => {
 
         <div className="nav-wrapper">
           <div className="nav-item" id="company">
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="about">About</NavLink>
 
             <div className="subnav"></div>
           </div>
 
           <div className="nav-item" id="solutions">
-            <NavLink to="/services">Services</NavLink>
+            <NavLink to="services">Services</NavLink>
 
             <div className="subnav"></div>
           </div>
 
           <div className="nav-item" id="company">
-            <NavLink to="/reseller">Reseller</NavLink>
+            <NavLink to="reseller">Reseller</NavLink>
 
             <div className="subnav"></div>
           </div>
 
           <div className="nav-item" id="user-cases">
-            <NavLink to="/datacenter">Data Center</NavLink>
+            <NavLink to="datacenter">Data Center</NavLink>
 
             <div className="subnav"></div>
           </div>
 
           <div className="nav-item" id="news">
-            <NavLink to="/solutions">Solutions</NavLink>
+            <NavLink to="solutions">Solutions</NavLink>
 
             <div className="subnav"></div>
           </div>

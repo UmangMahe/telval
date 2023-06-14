@@ -1,11 +1,12 @@
 import React from 'react';
+import bgImage from '/images/bge2.jpg'
 
 function Offices(props) {
     return (
         <>
           <div
               className="background"
-              style={{backgroundImage: "url('/images/bge2.jpg')"}}
+              style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
 
             <h1

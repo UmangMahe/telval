@@ -1,11 +1,12 @@
 import React from 'react';
+import bgImage from '/images/teambg.jpg'
 
 function Team(props) {
     return (
         <>
              <div
               className="background"
-              style={{backgroundImage: "url('/images/teambg.jpg')"}}
+              style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
 
             <div className="wrapper">
