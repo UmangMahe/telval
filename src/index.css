@@ -1,0 +1,91 @@
+#root {
+  background: #10171e;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: revert;
+}
+
+@font-face {
+  font-family: MarkLight;
+  src: url(/fonts/MarkLight.eot);
+  src: url(/fonts/MarkLight.eot) format("embedded-opentype"),
+    url(/fonts/MarkLight.woff2) format("woff2"),
+    url(/fonts/MarkLight.html) format("woff"),
+    url(/fonts/MarkLight.ttf) format("truetype"),
+    url(/fonts/MarkLight-2.html#MarkLight) format("svg");
+}
+
+@font-face {
+  font-family: MarkBold;
+  src: url(/fonts/MarkBold.eot);
+  src: url(/fonts/MarkBold.eot) format("embedded-opentype"),
+    url(/fonts/MarkBold.woff2) format("woff2"),
+    url(/fonts/MarkBold.woff) format("woff"),
+    url(/fonts/MarkBold.ttf) format("truetype"),
+    url(/fonts/MarkBold.html#MarkBold) format("svg");
+}
+
+@font-face {
+  font-family: MarkBook;
+  src: url(/fonts/MarkBook.eot);
+  src: url(/fonts/MarkBook.eot) format("embedded-opentype"),
+    url(/fonts/MarkBook.woff2) format("woff2"),
+    url(/fonts/MarkBook.woff) format("woff"),
+    url(/fonts/MarkBook.ttf) format("truetype"),
+    url(/fonts/MarkBook.html#MarkBook) format("svg");
+}
+
+body {
+  font-family: MarkBook;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
